@@ -2,22 +2,21 @@ import React from 'react';
 
 
 function Nav(props) {
-    const { currentTab, setCurrentTab } = props;
+    const { currentTab, SetCurrentTab } = props;
     const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
 
     return (
         <ul className="nav nav-tabs">
           {tabs.map(tab => (
             <li className="nav-item" key={tab}>
-              <a
-                href={tab}
-                onClick={() => setCurrentTab(tab)}
+              <span
+                onClick={() => SetCurrentTab(tab,console.log(currentTab))}
                 className={
-                  currentTab === tab ? 'nav-link active' : 'nav-link'
+                  currentTab === tab ? 'navActive mx-2' : 'mx-2'
                 }
               >
                 {tab}
-              </a>
+              </span>
             </li>
           ))}
         </ul>
