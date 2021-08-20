@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from "./components/Header";
 import Portfolio from './components/Portfolio';
+import About from './components/About';
 
 function App() {
   const [currentTab, SetCurrentTab] = useState('About');
@@ -13,6 +14,7 @@ function App() {
       case 'Resume' : return <Resume />;
     }
   }
+  
   return (
     <div className="App">
       <div>
