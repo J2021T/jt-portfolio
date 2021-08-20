@@ -1,14 +1,15 @@
 import React from 'react';
 
 
-function Nav() {
+function Nav(props) {
+    const { currentTab, setCurrentTab } = props;
     return (
         <nav>
             <ul className="flex-row">
-                <li className='navActive mx-2'>About</li>
-                <li className='mx-2'>Portfolio</li>
-                <li className='mx-2'>Contact</li>
-                <li className='mx-2'>Resumé</li>
+                <li className='navActive mx-2'><span onClick={() => setCurrentTab('About')}>About</span></li>
+                <li className='mx-2'><span onClick={() => setCurrentTab('Portfolio')}>Portfolio</span></li>
+                <li className='mx-2'><span onClick={() => setCurrentTab('Contact')}>Contact</span></li>
+                <li className='mx-2'><span onClick={() => setCurrentTab('Resume')}>Resumé</span></li>
             </ul>
         </nav>
     )

@@ -14,11 +14,11 @@ function App() {
       case 'Resume' : return <Resume />;
     }
   }
-  
+
   return (
     <div className="App">
       <div>
-        <Header></Header>
+        <Header currentTab={currentTab} SetCurrentTab={SetCurrentTab}></Header>
       </div>
       <div>
         {renderPage()}
