@@ -4,8 +4,11 @@ import Project from '../Project';
 function Portfolio() {
     
     return (
-        <h2>Portfolio</h2>
-        <Project></Project>
+        <div>
+            <h2>Portfolio</h2>
+            <Project />
+        </div>
+        
     )
 };
 
