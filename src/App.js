@@ -7,13 +7,16 @@ function App() {
   const renderPage = () => {
     switch (currentTab) {
       case 'About' : return <About />;
-      
+
     }
   }
   return (
     <div className="App">
       <div>
         <Header></Header>
+      </div>
+      <div>
+        {renderPage()}
       </div>
     </div>
   );
