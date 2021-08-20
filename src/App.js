@@ -3,6 +3,13 @@ import './App.css';
 import Header from "./components/Header";
 
 function App() {
+  const [currentTab, SetCurrentTab] = useState('About');
+  const renderPage = () => {
+    switch (currentTab) {
+      case 'About' : return <About />;
+      
+    }
+  }
   return (
     <div className="App">
       <div>
