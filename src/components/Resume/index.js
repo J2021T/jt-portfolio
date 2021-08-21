@@ -7,7 +7,7 @@ function Resume() {
         <div className="row">
             <h2 className="col-12">Résumé</h2>
             <div>
-                <a href={require("../../assets/resume/Resume.pdf").default} download><h3>Download My Resume</h3></a>
+                <a href={require("../../assets/resume/Resume.pdf").default} download><h3>Download My Résumé</h3></a>
             </div>
             <div className="col-6">
                 <h3>Front-End Skills</h3>
