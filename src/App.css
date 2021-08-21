@@ -67,3 +67,15 @@ html a {
 .container:hover .middle {
   opacity: 0.8;
 }
+
+input, label {
+  display: block;
+}
+
+textarea, label {
+  display: block;
+}
+
+input, textarea {
+  width: 30vw;
+}
