@@ -6,7 +6,7 @@
 
 .hero {
   background-color: var(--primary);
-  height: 30vh;
+  height: 20vh;
   background-size: cover;
   color: var(--tertiary);
   padding-top: 2vh;
@@ -33,4 +33,37 @@ html a {
 
 .navTab:hover {
   background-color: var(--secondary);
+}
+
+#me {
+  height: 45vh;
+  width: 20vw;
+  border-radius: 50%;
+}
+
+#navSpan {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#myName {
+  font-size: 3rem;
+}
+
+.success {
+  background-color: var(--tertiary);
+  color: white;
+}
+
+.container:hover img {
+  opacity: 0.3;
+}
+
+.middle {
+  opacity: 0;
+  position: relative;
+}
+
+.container:hover .middle {
+  opacity: 0.8;
 }

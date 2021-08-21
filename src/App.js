@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
 import Header from "./components/Header";
 import Portfolio from './components/Portfolio';
 import About from './components/About';
@@ -24,8 +23,8 @@ function App() {
   return (
     <div className="App">
       <Header currentTab={currentTab} SetCurrentTab={SetCurrentTab} />
-      <div>
-        <main className='d-flex justify-content-around align-text-center'>{renderPage()}</main>
+      <div className="mb-5">
+        <main className='d-flex justify-content-around text-center'>{renderPage()}</main>
       </div>
       <Footer />
     </div>

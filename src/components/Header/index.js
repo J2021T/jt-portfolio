@@ -6,10 +6,10 @@ function Header(props) {
     const { currentTab, SetCurrentTab } = props;
     return (
         <header className="hero row">
-            <div className='col-6'>
-                <h1 className="mx-2">Jordan Turcott</h1>
+            <div className='col-12 col-md-6'>
+                <h1 id="myName" className="mx-2">Jordan Turcott</h1>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6">
                 <Nav currentTab={currentTab} SetCurrentTab={SetCurrentTab}></Nav>
             </div>      
         </header>

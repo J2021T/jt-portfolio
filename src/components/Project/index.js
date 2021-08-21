@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 
 function Project() {
@@ -37,7 +38,17 @@ function Project() {
     return (
         <div className="justify-content-around row"> 
             {projects.map((project) => (
-                <img src={require(`../../assets/screenshots/${project.name}.png`).default} alt={project.name} className="img-thumbnail m-2 col-12 col-md-5" key={project.name} />
+                // <div className='bg-image hover-overlay col-12 col-md-5' style={{ maxWidth: '22rem' }}>
+                //     <img src={require(`../../assets/screenshots/${project.name}.png`).default} alt={project.name} className='img-thumbnail m-2 col-12 col-md-5' key={project.name} />
+                //     <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.6)' }}></div>
+                // </div>
+                <div className="container img-thumbnail m-2 col-12 col-md-5">
+                    <img src={require(`../../assets/screenshots/${project.name}.png`).default} alt={project.name} id="projects" className="img-thumbnail" key={project.name} />
+                    <div className="d-flex flex-column middle">
+                        <a href={project.github} target='_blank' rel="noreferrer" className="mb-2 col-12"><FaGithub size={70} /></a>
+                        <a href={project.deployed} target='_blank' rel="noreferrer" className="col-12">{project.name} App</a>
+                    </div>
+                </div>
             ))}           
         </div>
         
