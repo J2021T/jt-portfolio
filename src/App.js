@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import Portfolio from './components/Portfolio';
 import About from './components/About';
@@ -13,7 +14,7 @@ function App() {
       case 'About' : return <About />;
       case 'Portfolio' : return <Portfolio />;
       case 'Contact' : return <Contact />;
-      case 'Resume' : return <Resume />;
+      case 'Resumé' : return <Resume />;
       default : return <About />;
     }
   };
@@ -24,7 +25,7 @@ function App() {
         <Header currentTab={currentTab} SetCurrentTab={SetCurrentTab} />
       </div>
       <div>
-        {renderPage()}
+        <main className='d-flex justify-content-center align-text-center'>{renderPage()}</main>
       </div>
     </div>
   );

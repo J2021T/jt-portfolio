@@ -5,13 +5,13 @@ import Nav from '../Nav';
 function Header(props) {
     const { currentTab, SetCurrentTab } = props;
     return (
-        <header className="hero d-flex">
-            <div>
-                <h1>Jordan Turcott</h1>
+        <header className="hero row">
+            <div className='col-6'>
+                <h1 className="">Jordan Turcott</h1>
             </div>
-            <div>
+            <div className="col-6">
                 <Nav currentTab={currentTab} SetCurrentTab={SetCurrentTab}></Nav>
-            </div>
+            </div>      
         </header>
     )
 }

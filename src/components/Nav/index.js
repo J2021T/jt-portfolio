@@ -3,12 +3,12 @@ import React from 'react';
 
 function Nav(props) {
     const { currentTab, SetCurrentTab } = props;
-    const tabs = ['About', 'Portfolio', 'Contact', 'Resume'];
+    const tabs = ['About', 'Portfolio', 'Contact', 'Resumé'];
 
     return (
-        <ul className="nav nav-tabs">
+        <ul className="row">
           {tabs.map(tab => (
-            <li className="nav-item" key={tab}>
+            <li className="col-3" key={tab}>
               <span
                 onClick={() => SetCurrentTab(tab,console.log(currentTab))}
                 className={
@@ -21,16 +21,6 @@ function Nav(props) {
           ))}
         </ul>
     );
-//     return (
-//         <nav>
-//             <ul className="flex-row">
-//                 <li className='navActive mx-2'><span onClick={() => setCurrentTab('About')}>About</span></li>
-//                 <li className='mx-2'><span onClick={() => setCurrentTab('Portfolio')}>Portfolio</span></li>
-//                 <li className='mx-2'><span onClick={() => setCurrentTab('Contact')}>Contact</span></li>
-//                 <li className='mx-2'><span onClick={() => setCurrentTab('Resume')}>Resumé</span></li>
-//             </ul>
-//         </nav>
-//     )
 };
 
 export default Nav;

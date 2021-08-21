@@ -30,3 +30,7 @@ a {
 .navActive {
   color: white;
 }
+
+.navTab:hover {
+  background-color: var(--secondary);
+}
