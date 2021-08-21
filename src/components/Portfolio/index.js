@@ -6,7 +6,7 @@ function Portfolio() {
     return (
         <div>
             <h2>Portfolio</h2>
-            <Project />
+            <Project></Project>
         </div>
         
     )

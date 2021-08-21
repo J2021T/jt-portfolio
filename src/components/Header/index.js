@@ -7,7 +7,7 @@ function Header(props) {
     return (
         <header className="hero row">
             <div className='col-6'>
-                <h1 className="">Jordan Turcott</h1>
+                <h1 className="mx-2">Jordan Turcott</h1>
             </div>
             <div className="col-6">
                 <Nav currentTab={currentTab} SetCurrentTab={SetCurrentTab}></Nav>

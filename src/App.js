@@ -25,7 +25,7 @@ function App() {
         <Header currentTab={currentTab} SetCurrentTab={SetCurrentTab} />
       </div>
       <div>
-        <main className='d-flex justify-content-center align-text-center'>{renderPage()}</main>
+        <main className='d-flex justify-content-around align-text-center'>{renderPage()}</main>
       </div>
     </div>
   );
