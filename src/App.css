@@ -22,7 +22,7 @@ ul {
   list-style-type: none;
 }
 
-a {
+html a {
   color: midnightblue;
   text-decoration: none;
 }

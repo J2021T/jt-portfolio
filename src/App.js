@@ -14,7 +14,7 @@ function App() {
       case 'About' : return <About />;
       case 'Portfolio' : return <Portfolio />;
       case 'Contact' : return <Contact />;
-      case 'Resumé' : return <Resume />;
+      case 'Résumé' : return <Resume />;
       default : return <About />;
     }
   };

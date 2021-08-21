@@ -3,7 +3,7 @@ import React from 'react';
 
 function Nav(props) {
     const { currentTab, SetCurrentTab } = props;
-    const tabs = ['About', 'Portfolio', 'Contact', 'Resumé'];
+    const tabs = ['About', 'Portfolio', 'Contact', 'Résumé'];
 
     return (
         <ul className="row">
