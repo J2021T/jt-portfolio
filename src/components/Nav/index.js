@@ -8,11 +8,11 @@ function Nav(props) {
     return (
         <ul className="row">
           {tabs.map(tab => (
-            <li className="col-12 col-md-3" key={tab}>
+            <li className="col-3" key={tab}>
               <span
                 onClick={() => SetCurrentTab(tab,console.log(currentTab))}
                 className={
-                  currentTab === tab ? 'navActive mx-2' : 'mx-2'
+                  currentTab === tab ? 'navActive m-2' : 'm-2'
                 } id="navSpan"
               >
                 {tab}

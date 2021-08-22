@@ -42,12 +42,13 @@ html a {
 }
 
 #navSpan {
-  font-size: 2rem;
+  font-size: 5vh;
   cursor: pointer;
 }
 
 #myName {
-  font-size: 3rem;
+  font-size: 7vh;
+  cursor: pointer;
 }
 
 .success {
