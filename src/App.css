@@ -36,8 +36,10 @@ html a {
 }
 
 #me {
-  height: 45vh;
-  width: 20vw;
+  /* height: 45vh;
+  width: 20vw; */
+  max-width: 500px; 
+  height: auto;
   border-radius: 50%;
 }
 
@@ -78,5 +80,57 @@ textarea, label {
 }
 
 input, textarea {
-  width: 30vw;
+  width: 60vw;
+}
+
+@media only screen and (max-width: 1299px) {
+  #navSpan {
+    font-size: 4vh;
+    cursor: pointer;
+  }
+  
+  #myName {
+    font-size: 6vh;
+    cursor: pointer;
+  }
+
+  #me {
+    /* height: 45vh;
+    width: 20vw; */
+    max-width: 300px; 
+    height: auto;
+    border-radius: 50%;
+  }  
+}
+
+@media only screen and (max-width: 900px) {
+  #navSpan {
+    font-size: 3vh;
+    cursor: pointer;
+  }
+  
+  #myName {
+    font-size: 5vh;
+    cursor: pointer;
+  }
+  
+  #me {
+    /* height: 45vh;
+    width: 20vw; */
+    max-width: 200px; 
+    height: auto;
+    border-radius: 50%;
+  }  
+}
+
+@media only screen and (max-width: 400px) {
+  #navSpan {
+    font-size: 2vh;
+    cursor: pointer;
+  }
+  
+  #myName {
+    font-size: 4vh;
+    cursor: pointer;
+  }
 }

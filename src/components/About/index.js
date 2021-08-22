@@ -6,7 +6,7 @@ function About() {
         <div className='row justify-content-center text-center hover-overlay'>
             <h2 className="mx-2">About Me</h2>
             <div>
-                <img src={require("../../assets/me/camping.jpg").default} alt="Jordan" id="me" className="m-2"></img>
+                <img src={require("../../assets/me/camping.jpg").default} alt="Jordan" id="me" className="img-responsive m-2"></img>
             </div>
             <div>
                 <p className="mx-2">I am a husband and father first.  My loyalty and passion are first given to my family.  Although, sports and outside activities are very close. I love the New England region of the United States.</p>

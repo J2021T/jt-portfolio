@@ -6,7 +6,7 @@ function Nav(props) {
     const tabs = ['About', 'Portfolio', 'Contact', 'Résumé'];
 
     return (
-        <ul className="row">
+        <ul className="row text-center">
           {tabs.map(tab => (
             <li className="col-3" key={tab}>
               <span
