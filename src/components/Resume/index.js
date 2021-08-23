@@ -9,9 +9,9 @@ function Resume() {
             <div className="mb-5">
                 <a href={require("../../assets/resume/Resume.pdf").default} download><h3>Download My Résumé</h3></a>
             </div>
-            <div className="col-6">
+            <div id="skills" className="col-12 col-md-6">
                 <h3>Front-End Skills</h3>
-                <ol>
+                <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -19,11 +19,11 @@ function Resume() {
                     <li>Bootstrap</li>
                     <li>Bulma</li>
                     <li>React</li>
-                </ol>
+                </ul>
             </div>
-            <div className="col-6">
+            <div id="skills" className="col-12 col-md-6">
             <h3>Back-End Skills</h3>
-                <ol>
+                <ul>
                     <li>NodeJS</li>
                     <li>Express</li>
                     <li>API's</li>
@@ -32,7 +32,7 @@ function Resume() {
                     <li>Sequelize</li>
                     <li>Mongoose</li>
                     <li>Progressive Web Applications (PWA)</li>
-                </ol>
+                </ul>
             </div>
         </div>
      )    
