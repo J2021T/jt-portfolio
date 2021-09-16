@@ -10,6 +10,11 @@ function Project() {
             deployed: 'https://butler-bites.herokuapp.com/'
         },
         {
+            name: 'Esoteric-Elixirs',
+            github: 'https://github.com/antellitocci/esoteric-elixirs',
+            deployed: 'https://esoteric-elixirs.herokuapp.com/'
+        },
+        {
             name: 'Mix-Master',
             github: 'https://github.com/J2021T/mix-master',
             deployed: 'https://j2021t.github.io/mix-master/'
@@ -28,11 +33,6 @@ function Project() {
             name: 'p4SsW0rD',
             github: 'https://github.com/J2021T/p4ssw0rd',
             deployed: 'https://j2021t.github.io/p4ssw0rd/'
-        },
-        {
-            name: 'Finance-Tracker',
-            github: 'https://github.com/J2021T/finance-tracker',
-            deployed: 'https://turcott-finance-tracker.herokuapp.com/'
         }
     ]
     return (
